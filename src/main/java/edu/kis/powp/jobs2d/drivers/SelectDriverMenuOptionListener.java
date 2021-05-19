@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 
 public class SelectDriverMenuOptionListener implements ActionListener {
     private final DriverManager driverManager;
-    private Job2dDriver driver = null;
+    private IVisitableDriver driver = null;
 
-    public SelectDriverMenuOptionListener(Job2dDriver driver, DriverManager driverManager) {
+    public SelectDriverMenuOptionListener(IVisitableDriver driver, DriverManager driverManager) {
         this.driverManager = driverManager;
         this.driver = driver;
     }

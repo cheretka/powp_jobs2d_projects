@@ -9,19 +9,19 @@ import edu.kis.powp.jobs2d.LoggerDriver;
  */
 public class DriverManager {
 
-    private Job2dDriver currentDriver = new LoggerDriver();
+    private IVisitableDriver currentDriver;
 
     /**
      * @param driver Set the driver as current.
      */
-    public synchronized void setCurrentDriver(Job2dDriver driver) {
+    public synchronized void setCurrentDriver(IVisitableDriver driver) {
         currentDriver = driver;
     }
 
     /**
      * @return Current driver.
      */
-    public synchronized Job2dDriver getCurrentDriver() {
+    public synchronized IVisitableDriver getCurrentDriver() {
         return currentDriver;
     }
 }
